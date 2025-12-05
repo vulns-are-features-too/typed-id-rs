@@ -7,6 +7,9 @@ use std::{
     marker::PhantomData,
 };
 
+#[cfg(feature = "serde")]
+mod serde;
+
 type DefaultIdType = u32;
 
 /// ID bound to an owner type T & backed by a type I
